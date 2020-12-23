@@ -1,0 +1,59 @@
+/*------------------------------------------- Header -------------------------------------------- */
+
+.header .navbar {
+    /* background-color: #dc143c; */
+    background-color: darkred;
+    color: white;
+}
+
+.header .logo {
+    max-height: 80px;
+}
+
+.flip-horizontally {
+    transform: scaleX(-1);
+  }
+
+body::after {
+    content: "";
+    background: url("../images/pxfuel.com.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; 
+}
+
+.main {
+    min-height: calc(100vh - 195px);
+}
+
+.main .fas,
+.main .far {
+    color: darkred;
+    margin-right: 20px;
+}
+
+.main .fas + a,
+.main .far + a {
+    text-decoration: none;
+    color: darkred;
+}
+
+img.about {
+    max-width: 300px;
+}
+
+.footer {
+    height: 40px;
+    background-color: darkred;
+    color: white;
+    /* position: absolute;
+    bottom: 0;
+    padding-top: -40px;
+    width: 100%; */
+}
