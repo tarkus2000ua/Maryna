@@ -19,91 +19,108 @@
 </head>
 
 <body>
-    <header class="header mb-5">
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark">
-          <!-- Container wrapper -->
-          <div class="container">
-            <!-- Navbar brand -->
-            <a class="navbar-brand"
-               href="index.html"><img class="logo" src="images/logo.png"></a>
-    
-            <!-- Toggle button -->
-            <button class="navbar-toggler"
-                    type="button"
-                    data-mdb-toggle="collapse"
-                    data-mdb-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
-              <i class="fas fa-bars"></i>
-            </button>
-    
-            <!-- Collapsible wrapper -->
-            <div class="collapse navbar-collapse"
-                 id="navbarSupportedContent">
-              <!-- Left links -->
-              <ul class="navbar-nav mx-5 mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link"
-                     aria-current="page"
-                     href="index.html">Головна</a>
+  <header class="header mb-5">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <!-- Container wrapper -->
+      <div class="container">
+        <!-- Navbar brand -->
+        <a class="navbar-brand"
+           href="index.html"><img class="logo"
+               src="images/logo.png"></a>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse"
+             id="navbarSupportedContent">
+          <!-- Left links -->
+          <ul class="navbar-nav mr-5 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link"
+                 aria-current="page"
+                 href="index.html">Головна</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"
+                 href="about.html">Про мене</a>
+            </li>
+            <!-- Navbar dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active"
+                 href="#"
+                 id="navbarDropdown"
+                 role="button"
+                 data-mdb-toggle="dropdown"
+                 aria-expanded="false">
+                Пропозиція
+              </a>
+              <!-- Dropdown menu -->
+              <ul class="dropdown-menu"
+                  aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item"
+                     href="prop1.html">Присяжні переклади</a></li>
+                <li><a class="dropdown-item"
+                     href="prop2.html">Переклад документів</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link"
-                     href="about.html">Про мене</a>
-                </li>
-                <!-- Navbar dropdown -->
-                <li class="nav-item dropdown">
-                  <a class="nav-link active dropdown-toggle"
-                     href="#"
-                     id="navbarDropdown"
-                     role="button"
-                     data-mdb-toggle="dropdown"
-                     aria-expanded="false">
-                    Пропозиція
-                  </a>
-                  <!-- Dropdown menu -->
-                  <ul class="dropdown-menu"
-                      aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item"
-                         href="prop1.html">Присяжні переклади</a></li>
-                    <li><a class="dropdown-item"
-                         href="prop2.html">Переклад документів</a></li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a class="dropdown-item"
-                         href="#">Курси польської мови</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link"
-                     href="price.html">Ціни</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link"
-                     href="#">Контакти</a>
+                <li>
+                  <a class="dropdown-item"
+                     href="prop3.html">Курси польської мови</a>
                 </li>
               </ul>
-              <!-- Left links -->
-    
-            </div>
-            <!-- Collapsible wrapper -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"
+                 href="price.html">Ціни</a>
+            </li>
+          </ul>
+          <!-- Left links -->
+
+        </div>
+        <!-- Collapsible wrapper -->
+
+        <!-- Contacts-->
+        <div class="contacts">
+          <div><i class="fas fa-phone ml-5"></i> <a href="tel:+380992558721">+38 099 255 87 21</a></div>
+          <div><i class="far fa-envelope ml-5"></i>&nbsp;<a href="#"
+               class="cryptedmail"
+               data-name="marina.yurevich"
+               data-domain="gmail"
+               data-tld="com"
+               onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"></a>
           </div>
-          <!-- Container wrapper -->
-        </nav>
-        <!-- Navbar -->
-      </header>
+        </div>
+
+        <!-- Language switcher -->
+        <div class="lang">
+          <a href="#"
+             class="active">Ukr</a> | <a href="#">Ru</a>
+        </div>
+
+        <!-- Toggle button -->
+        <button class="navbar-toggler"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+
+  </header>
 
     <main class="main">
         <div class="container px-3">
-          <h3 class="text-center mb-5">ПРИСЯЖНІ ПЕРЕКЛАДИ (ЗАВІРЕНІ ПЕРЕКЛАДИ)</h3>
+          <h3 class="text-center mb-3">ПРИСЯЖНІ ПЕРЕКЛАДИ (ЗАВІРЕНІ ПЕРЕКЛАДИ)</h3>
             <div class="row">
                 <div class="col col-lg-4 col-md-6 col-12 mb-3">
-                    <img class="flip-horizontally img-fluid"
+                    <img class="img-fluid"
                          src="images/right-2746187_640.jpg">
                 </div>
                 <div class="col col-lg-8 col-md-6 col-12">
