@@ -17,7 +17,7 @@
 body::after {
     content: "";
     background: url("../images/pxfuel.com.jpg");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
     opacity: 0.1;
     top: 0;
@@ -26,6 +26,10 @@ body::after {
     right: 0;
     position: absolute;
     z-index: -1; 
+}
+
+.container {
+    position: relative;
 }
 
 .main {
@@ -38,10 +42,21 @@ body::after {
     margin-right: 20px;
 }
 
+.fas + a,
+.far + a {
+    text-decoration: none;
+    color: white;
+}
+
 .main .fas + a,
 .main .far + a {
     text-decoration: none;
     color: darkred;
+}
+
+.contacts {
+    min-width: 230px;
+    margin-right: 50px;
 }
 
 img.about {
@@ -56,4 +71,20 @@ img.about {
     bottom: 0;
     padding-top: -40px;
     width: 100%; */
+}
+
+p {
+    text-align: justify;
+}
+
+.cryptedmail:after {
+    content: attr(data-name) "@" attr(data-domain) "." attr(data-tld); 
+  }
+
+.lang {
+    font-size: 0.75rem;
+    min-width: 50px;
+    position: absolute;
+    right: 15px;
+    top: 10px;
 }
