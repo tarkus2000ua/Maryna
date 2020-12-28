@@ -42,10 +42,7 @@
 	font-style: italic;
 }
 
-/*------------------------------------------- Header -------------------------------------------- */
-
 .header .navbar {
-    /* background-color: #dc143c; */
     background-color: darkred;
     color: white;
 }
@@ -59,7 +56,6 @@
 }
 
 body {
-    /* background-size: cover; */
     font-family: 'Century Gothic';
     background: linear-gradient(
         rgba(255,255,255,0.9),
@@ -151,7 +147,6 @@ img.about {
     height: 50px;
     background-color: darkred;
     color: white;
-    margin-top: 50px;
 }
 
 p {
@@ -168,7 +163,7 @@ p {
     min-width: 50px;
     position: absolute;
     right: 20px;
-    top: 10px;
+    top: 5px;
     z-index: 5;
 }
 
@@ -181,6 +176,12 @@ p {
     text-decoration: underline;
 }
 
+.navbar-toggler {
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+}
+
 @media screen and (max-width: 991px) {
     .contacts {
         position: absolute;
@@ -189,6 +190,10 @@ p {
         top: 20px;
         left: 150px;
         margin-right: 0;
+    }
+
+    .footer {
+        margin-top: 50px;
     }
 }
 
@@ -203,13 +208,8 @@ p {
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) {
     .contacts {
-        position: absolute;
-        font-size: 0.75rem;
-        min-width: 200px;
-        top: 30px;
-        left: 110px;
-        margin-right: 0;
+        display: none;
     }
 }
