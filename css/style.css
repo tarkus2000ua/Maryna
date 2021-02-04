@@ -138,6 +138,18 @@ img.about {
     margin-top: 50px;
 }
 
+.record a {
+    text-decoration: none;
+    color: #000;
+}
+
+.link,
+.link:visited,
+.link:hover {
+    text-decoration: underline;
+    color: darkred;
+}
+
 .contact-item {
     padding: 3px 10px;
     margin-top: 20px;
