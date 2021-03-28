@@ -85,7 +85,8 @@ body {
 }
 
 .main .fas + a,
-.main .far + a {
+.main .far + a,
+.phone a {
     text-decoration: none;
     color: darkred;
 }
@@ -134,7 +135,7 @@ img.about {
 .record {
     background-color: #f1e1e1;
     padding: 3px 10px;
-    max-width: 600px;
+    max-width: 630px;
     margin-top: 50px;
 }
 
@@ -152,7 +153,12 @@ img.about {
 
 .contact-item {
     padding: 3px 10px;
-    margin-top: 20px;
+    margin-top: 15px;
+}
+
+.contact-item.city,
+.contact-item.phone {
+    display: flex;
 }
 
 .footer {
